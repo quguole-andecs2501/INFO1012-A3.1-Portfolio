@@ -7,7 +7,7 @@
 **Programme:** Computer Science, Class 2501  
 **Institution:** Xi'an University of Architecture and Technology — Ande College
 
-> **GitHub Classroom repository:** `<ADD YOUR GITHUB REPOSITORY URL HERE>`
+> **GitHub repository:** https://github.com/quguole-andecs2501/INFO1012-A3.1-Portfolio
 
 ---
 
