@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Qu Guole's personal digital portfolio: computer science student, web development learner and sports enthusiast."
+  >
+  <title>Qu Guole | Personal Digital Portfolio</title>
+  <script>
+    // Add a JavaScript marker before CSS loads so reveal effects remain progressive-enhancement only.
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgress"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navigation container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Qu Guole portfolio home">
+        <span class="brand-mark">QG</span>
+        <span class="brand-text">
+          <strong>QU GUOLE</strong>
+          <small>Digital portfolio</small>
+        </span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primaryMenu"
+      >
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <div class="nav-panel" id="primaryMenu">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#focus">Focus</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to dark colour theme"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true" id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero: immediately establishes identity, programme and personal tone. -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Computer Science · Class 2501</p>
+        <h1 id="hero-title">
+          <span>Qu</span>
+          <span class="hero-name-accent">Guole</span>
+        </h1>
+        <p class="hero-chinese">曲国乐</p>
+        <p class="hero-statement">
+          Calm focus, steady learning, and a genuine love of movement.
+          I am a second-year computer science student building thoughtful
+          digital experiences one detail at a time.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work</a>
+          <a class="button button-ghost" href="#about">More about me</a>
+        </div>
+        <dl class="hero-meta">
+          <div>
+            <dt>University</dt>
+            <dd>XAUAT</dd>
+          </div>
+          <div>
+            <dt>College</dt>
+            <dd>Ande College</dd>
+          </div>
+          <div>
+            <dt>Student ID</dt>
+            <dd>2518020124</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+        <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+        <div class="portrait-card">
+          <div class="portrait-frame">
+            <img
+              src="assets/profile.jpg"
+              alt="Portrait of Qu Guole"
+              width="960"
+              height="1280"
+            >
+          </div>
+          <div class="portrait-caption">
+            <span>Based in Xi'an</span>
+            <span>Open to learning</span>
+          </div>
+        </div>
+        <span class="floating-word word-one" aria-hidden="true">CREATE</span>
+        <span class="floating-word word-two" aria-hidden="true">MOVE</span>
+      </div>
+    </section>
+
+    <!-- About: separates verified personal details from reflective commentary. -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / About</p>
+        <h2 id="about-title">Quietly observant.<br><em>Purposefully persistent.</em></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-story reveal">
+          <p class="lead">
+            I am Qu Guole, a second-year Computer Science student at Ande College,
+            Xi'an University of Architecture and Technology.
+          </p>
+          <p>
+            I tend to be calm and somewhat introverted. I prefer to observe,
+            understand a problem, and work through it steadily rather than rush
+            toward a superficial answer. That approach has shaped how I learn
+            programming: break the problem down, test each assumption, and improve
+            the result step by step.
+          </p>
+          <p>
+            My interests extend beyond the screen. Sport gives me energy, helps
+            me reset, and reminds me that progress comes from consistent practice.
+            I want my work in technology to reflect the same balance: thoughtful,
+            reliable, and genuinely useful to people.
+          </p>
+          <blockquote>
+            “A calm pace does not mean standing still. It means choosing the next
+            step with care.”
+          </blockquote>
+        </div>
+
+        <div class="values-card reveal" aria-label="Personal values">
+          <p class="card-label">How I work</p>
+          <ol>
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Understand first</h3>
+                <p>Read the brief closely and clarify the purpose before writing code.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Build clearly</h3>
+                <p>Use meaningful structure, readable styles, and comments that explain decisions.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Test honestly</h3>
+                <p>Check normal use, edge cases, keyboard access, and small-screen layouts.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="fact-strip reveal" aria-label="Quick profile facts">
+        <div>
+          <span>02</span>
+          <p>Year of study</p>
+        </div>
+        <div>
+          <span>2501</span>
+          <p>Computer science class</p>
+        </div>
+        <div>
+          <span>03</span>
+          <p>Core web technologies</p>
+        </div>
+        <div>
+          <span>∞</span>
+          <p>Room to keep learning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus: skill groups are presented as learning areas rather than exaggerated expertise. -->
+    <section class="section section-tinted" id="focus" aria-labelledby="focus-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / Focus</p>
+          <h2 id="focus-title">Building the foundation<br><em>for stronger ideas.</em></h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card focus-card-large reveal">
+            <div class="focus-icon" aria-hidden="true">&lt;/&gt;</div>
+            <p class="card-label">Web development</p>
+            <h3>Structure, style and interaction</h3>
+            <p>
+              I am learning to design accessible interfaces with semantic HTML,
+              responsive CSS and clear JavaScript behaviour.
+            </p>
+            <ul class="skill-list">
+              <li><span>HTML &amp; accessibility</span><span>Learning</span></li>
+              <li><span>Responsive CSS</span><span>Learning</span></li>
+              <li><span>JavaScript &amp; DOM</span><span>Learning</span></li>
+              <li><span>Git &amp; GitHub</span><span>Practising</span></li>
+            </ul>
+          </article>
+
+          <article class="focus-card reveal">
+            <div class="focus-icon" aria-hidden="true">{ }</div>
+            <p class="card-label">Programming</p>
+            <h3>Logic before shortcuts</h3>
+            <p>
+              Coursework in C/C++ and Python helps me practise decomposition,
+              functions, data handling and debugging.
+            </p>
+          </article>
+
+          <article class="focus-card focus-card-dark reveal">
+            <div class="focus-icon" aria-hidden="true">◎</div>
+            <p class="card-label">Systems thinking</p>
+            <h3>Seeing the whole system</h3>
+            <p>
+              I am also learning how requirements, people, software and data
+              fit together—not just how individual pieces of code work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work: filter controls and modal content make this section interactive. -->
+    <section class="section container" id="work" aria-labelledby="work-title">
+      <div class="section-heading section-heading-row reveal">
+        <div>
+          <p class="section-index">03 / Selected work</p>
+          <h2 id="work-title">Learning made visible.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter" type="button" data-filter="systems" aria-pressed="false">Systems</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card reveal" data-category="web">
+          <div class="project-preview project-preview-profile" aria-hidden="true">
+            <span class="preview-label">PORTFOLIO</span>
+            <strong>QG</strong>
+            <span>HTML · CSS</span>
+          </div>
+          <div class="project-content">
+            <p class="project-number">01 / Web</p>
+            <h3>Personal Profile Page</h3>
+            <p>
+              A responsive identity page built with semantic HTML and CSS,
+              centred on clear visual hierarchy and mobile accessibility.
+            </p>
+            <button class="text-button" type="button" data-project="profile">
+              View case study <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-preview project-preview-calculator" aria-hidden="true">
+            <span class="preview-label">JAVASCRIPT</span>
+            <div class="mini-display">24</div>
+            <div class="mini-buttons"><i>+</i><i>−</i><i>×</i><i>÷</i></div>
+          </div>
+          <div class="project-content">
+            <p class="project-number">02 / Web</p>
+            <h3>Arithmetic Calculator</h3>
+            <p>
+              A four-operation calculator with reusable functions, keyboard
+              support, session history and thorough input validation.
+            </p>
+            <button class="text-button" type="button" data-project="calculator">
+              View case study <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="systems">
+          <div class="project-preview project-preview-systems" aria-hidden="true">
+            <span class="node node-a">Patient</span>
+            <span class="line line-a"></span>
+            <span class="node node-b">Booking</span>
+            <span class="line line-b"></span>
+            <span class="node node-c">Service</span>
+          </div>
+          <div class="project-content">
+            <p class="project-number">03 / Systems</p>
+            <h3>GoodHealth Booking Model</h3>
+            <p>
+              A UML and requirements analysis exercise that connected patients,
+              bookings, practitioners and medical services.
+            </p>
+            <button class="text-button" type="button" data-project="systems">
+              View case study <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Journey: a concise learning timeline, using semantic ordered-list structure. -->
+    <section class="section section-dark" id="journey" aria-labelledby="journey-title">
+      <div class="container journey-layout">
+        <div class="section-heading reveal">
+          <p class="section-index">04 / Journey</p>
+          <h2 id="journey-title">A year of building<br><em>technical confidence.</em></h2>
+        </div>
+        <ol class="timeline reveal">
+          <li>
+            <span class="timeline-year">2026 · Foundation</span>
+            <h3>Understanding computer systems</h3>
+            <p>Operating systems, data representation, algorithms and program execution.</p>
+          </li>
+          <li>
+            <span class="timeline-year">2026 · Web</span>
+            <h3>From markup to interaction</h3>
+            <p>HTML structure, responsive CSS, JavaScript logic, validation and Git workflow.</p>
+          </li>
+          <li>
+            <span class="timeline-year">Next · Growth</span>
+            <h3>More complete digital products</h3>
+            <p>Continue strengthening software design, accessibility and problem-solving.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Interests: this keeps the portfolio personal while avoiding invented achievements. -->
+    <section class="section container interests" id="interests" aria-labelledby="interests-title">
+      <div class="interests-graphic reveal" aria-hidden="true">
+        <div class="motion-ring ring-outer"></div>
+        <div class="motion-ring ring-inner"></div>
+        <span>MOTION</span>
+      </div>
+      <div class="interests-copy reveal">
+        <p class="section-index">05 / Beyond code</p>
+        <h2 id="interests-title">Sport keeps me grounded.</h2>
+        <p>
+          I enjoy sports because they create a healthy contrast to quiet,
+          screen-focused study. Movement brings energy and clarity, while practice
+          reinforces the same lesson I use in programming: meaningful progress
+          comes from repetition, attention and patience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact: client-side validation demonstrates accessible form feedback. -->
+    <section class="section container contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy reveal">
+        <p class="section-index">06 / Contact</p>
+        <h2 id="contact-title">Have a thoughtful question<br>or a project idea?</h2>
+        <p>
+          Use the form to try the validated interaction. This portfolio is a
+          static GitHub website, so the form demonstrates browser-side validation
+          rather than sending data to a server.
+        </p>
+        <dl class="contact-details">
+          <div>
+            <dt>Email</dt>
+            <dd>Available through the course contact channels</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Xi'an, China</dd>
+          </div>
+        </dl>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field-row">
+          <div class="form-field">
+            <label for="contactName">Name</label>
+            <input
+              id="contactName"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Your name"
+              aria-describedby="nameError"
+            >
+            <p class="field-error" id="nameError"></p>
+          </div>
+          <div class="form-field">
+            <label for="contactEmail">Email</label>
+            <input
+              id="contactEmail"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="name@example.com"
+              aria-describedby="emailError"
+            >
+            <p class="field-error" id="emailError"></p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="contactMessage">Message</label>
+          <textarea
+            id="contactMessage"
+            name="message"
+            rows="5"
+            maxlength="500"
+            placeholder="Write a short message..."
+            aria-describedby="messageCount messageError"
+          ></textarea>
+          <div class="field-meta">
+            <p class="field-error" id="messageError"></p>
+            <span id="messageCount" aria-live="polite">0 / 500</span>
+          </div>
+        </div>
+        <button class="button button-primary form-submit" type="submit">Check message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>曲国乐 · Qu Guole</strong>
+        <p>INFO1012 Assignment 3.1 · Personal Digital Portfolio</p>
+      </div>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Native dialog provides accessible modal behaviour with minimal JavaScript. -->
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <form method="dialog">
+      <button class="dialog-close" type="submit" aria-label="Close project details">×</button>
+    </form>
+    <p class="dialog-label" id="dialogCategory">Project</p>
+    <h2 id="dialogTitle">Project title</h2>
+    <p class="dialog-summary" id="dialogSummary"></p>
+    <div class="dialog-details" id="dialogDetails"></div>
+    <button class="button button-primary dialog-done" type="button" id="dialogDone">Close</button>
+  </dialog>
+
+  <noscript>
+    <p class="noscript-message">
+      JavaScript is disabled. The content remains readable, but project filters,
+      the theme control and form validation require JavaScript.
+    </p>
+  </noscript>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
